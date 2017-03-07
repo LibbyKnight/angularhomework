@@ -1,0 +1,2 @@
+angular
+	.module('angularTodo.list', []);
