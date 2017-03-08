@@ -3,5 +3,8 @@ angular
 	.controller('ListCtrl', ListCtrl);
 
 function ListCtrl() {
+	var vm = this;
 
-}
+	vm.name = 'Beatriz';
+
+};

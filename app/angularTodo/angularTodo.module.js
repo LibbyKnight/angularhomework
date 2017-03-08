@@ -1,7 +1,8 @@
 angular
 	.module('angularTodo', [
 		'ui.router',
-		'angularTodo.list'
+		'angularTodo.list',
+		'angularTodo.completed'
 	])
 
 	.config(angularTodoConfig);
