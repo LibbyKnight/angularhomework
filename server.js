@@ -15,7 +15,17 @@ app.use(bodyParser.urlencoded({
 app.use(express.static(__dirname + "/app"));
 // app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:3000/todos/")
+mongoose.connect("mongodb://localhost/todos/");
+
+var db = mongoose.connection;
+
+db.on("error", function(error) {
+	console.log("Mongoose Error: ", error);
+});
+
+db.once("open", function() {
+	console.log("Mongoose connection successful.");
+});
 
 app.listen(PORT, function() {
 	console.log("listening on port:" + PORT);

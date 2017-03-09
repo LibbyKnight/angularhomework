@@ -1,3 +1,55 @@
 <div class="flex">
   <h1>Hello {{ListVM.name}}</h1>
 </div>
+
+
+
+<ul class="nav nav-tabs">
+
+  <li role="presentation" class="active"><a ui-sref="list">List</a></li>
+
+  <li role="presentation"><a ui-sref="create">Create</a></li>
+
+  <li role="presentation"><a ui-sref="completed">Completed</a></li>
+
+</ul>
+
+<br>
+
+<h3>Overdue</h3>
+
+<hr>
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+
+      <input type="text" class="form-control" aria-label="...">
+
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /input-group -->
+
+ <br>
+
+ <h3>Due Today</h3>
+
+ <hr>
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+     
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+
+      <input type="text" class="form-control" aria-label="...">
+   
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /input-group -->
