@@ -5,6 +5,6 @@ angular
 function CompletedCtrl() {
 	var vm = this;
 
-	vm.name = 'Beatriz';
+	vm.todoCompleted= [];
 
 };

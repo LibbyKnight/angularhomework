@@ -12,6 +12,8 @@ app.use(logger("dev"));
 app.use(bodyParser.urlencoded({
 	extended: false
 }));
+
+
 app.use(express.static(__dirname + "/app"));
 // app.use(express.static("public"));
 
@@ -30,3 +32,5 @@ db.once("open", function() {
 app.listen(PORT, function() {
 	console.log("listening on port:" + PORT);
 });
+
+ module.exports = db;

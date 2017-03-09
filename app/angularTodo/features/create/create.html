@@ -1,7 +1,27 @@
-<div class="flex">
-  <h1>Create State</h1>
-</div>
 
+<br>
+<br>
+
+<div class="flex">
+ 
+
+<nav class="navbar navbar-default">
+
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <a class="navbar-brand" style="margin-left: 700px; font-size: 40px;">
+
+         AngularJS To-Do List
+
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
 
 <ul class="nav nav-tabs">
 
@@ -20,7 +40,7 @@
 
   <span class="input-group-addon" id="basic-addon1">To-Do:</span>
 
-  <input type="text" class="form-control" aria-describedby="basic-addon1">
+  <input class="form-control" type="text" name="todoItem" aria-describedby="basic-addon1" ng=model="CreateVM.todos.todoItem">
 
 </div>
 </div>
@@ -42,11 +62,7 @@
 
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-calendar"></span><span class="caret"></span></button>
 
-        <ul class="dropdown-menu dropdown-menu-right">
-
-         
-
-        </ul>
+       
 
       </div><!-- /btn-group -->
 
@@ -56,8 +72,11 @@
 
 </div><!-- /.row -->
 
-<br>
-<br>
-<p><a class="btn btn-primary btn-lg" href="#" role="button">Create To-Do</a></p>
 
 
+<br>
+<br>
+<p><a class="btn btn-primary btn-lg" ng-click="CreateVM.addTodo()" role="button">Create To-Do</a></p>
+
+
+</div>

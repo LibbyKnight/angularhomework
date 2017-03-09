@@ -5,6 +5,4 @@ angular
 function ListCtrl() {
 	var vm = this;
 
-	vm.name = 'Beatriz';
-
 };
